@@ -1,6 +1,6 @@
 <?php
 
-class Bseg extends Controller{
+class bseg extends Controller{
 
     public function __construct(){
 
