@@ -13,7 +13,7 @@ class Ceco extends Table{
     public function index(){
 
         $sql = "SELECT idSucursal AS idDepartamento, ceco ".
-        " FROM `pit-analytics-2019.QLIK` ORDER BY idSucursal;";
+        " FROM `pit-analytics-2019.QLIK.Ceco` ORDER BY idSucursal;";
         $cecos = $this->bigQuery->select($sql);
         return $cecos;
 
