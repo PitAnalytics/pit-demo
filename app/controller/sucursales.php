@@ -11,7 +11,7 @@ class Sucursales extends Controller{
 
     public function index(){
 
-        $accountModel = new Pit\Multiva\Contables\Office(BigQuery::getInstance('informe-211921'));
+        $accountModel = new Pit\Multiva\Contables\Office(BigQuery::getInstance('pit-analytics-2019'));
         $account = $accountModel->index();
         echo(json_encode($account));
 
